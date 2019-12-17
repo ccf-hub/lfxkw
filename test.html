@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>作业</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+/*背景设置*/
+body{
+background-color:#F5F5F5;
+background-repeat: repeat;
+background-size:cover;background-position: center center;
+background-attachment: local;
+}
+
+html,body{
+height:100%;width:100%;
+}
+
+/*导航栏*/
+.nav{
+position:absolute;top:0px;left:0px;
+width:100%;height: 70px;
+background-color:#ADD8E6;filter:alpha(opacity=60);}
+
+.nav ul{list-style-type: none;margin: 0px auto;
+width: 750px;
+
+}
+
+.nav li{float: left;
+display:inlineblock;
+height:50px;float:left;text-align:center;
+font-weight:bold;width:150px;
+margin-left:0px;position:relative;z-index:1;
+line-height:70px;color:#755B5C
+}
+
+.nav a{display : inline-block;width: 150px;height: 70px;
+padding: 0px;margin:0px;
+font-weight:bold;/*字体加粗*/
+font-family: Microsoft Yahei;/*字体样式*/
+line-height: 70px;background-color: #87CEEB;
+color:#000000;text-align: center;text-decoration: none;
+font-size: 20px;border:0px;/* solid  #C0C0C0*/
+filter:alpha(opacity=60);}
+
+/*下拉菜单*/
+.new-nav li{margin-left:0px;height:70px;clear:both;}
+
+.nav li a{display:inline-block;height:70px;
+text-decoration:none;color:#755B5C;width:150px;
+line-height:70px;}
+
+/*下拉内容格式*/
+.new-nav{
+list-style-type:none;display:none;
+min-width:100px;background-color: #87CEEB;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.nav li a:hover{color:black;}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.new:hover .new-nav{display:block;}
+
+span{
+font-size:10px;display:inline-block;height:20px;width:150px;line-height:10px;
+}
+
+#banner{
+position:relative;width:100%;height:330px;margin:70px auto;
+
+}
+#banner img{
+width:100%;height:330px;position:absolute;left:0;opacity:0;}
+#banner .on{transition:1.5s;opacity:1;}
+
+.classify{
+width:1000px;height:200px;margin:20px auto;overflow:hidden;
+}
+
+.notice{
+height:180px;margin-bottom:20px;text-align:center;color:#FFB21A;line-height:180px;font-size:38px;background-color:#F5F5DC;font-weight:bold;
+}
+
+.content{
+width:1000px;height:660px;margin:20px auto;
+box-shadow:5px 5px 5px #412121;overflow:hidden;
+background-color:#ADD8E6;
+background-size:1000px 660px;
+background-repeat:no-repeat;
+}
+	
+.content p{
+width:960px;height:160px;display:inline-block;(0,0,0,0));color:black;font-size:20px;line-height:40px;
+font-weight:bold;padding-left:350px;
+}
+	
+.content:hover p{}
+	
+.footer{
+height:50px;line-height:25px;font-size:13px;color:black;background-color:#ADD8E6;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="nav">	
+<ul class="daohang">
+			
+<li><a href="index.html">首页</a>
+</li>
+			
+<li class="new">
+<a href="">课程</a>
+<ul class="new-nav">
+                        <li><a href="usualcourses.html">通用能力</a></li>
+                        <li><a href="necessarycourses.html">公共必修</a></li>
+                        <li><a href="createcourses.html">创新创业</a></li>
+                    </ul>
+</li>
+
+<li><a href="source.html">资料</a>
+</li>
+			
+<li><a href="test.html">作业</a>
+</li>
+
+<li><a href="about.html">关于</a>
+</li>
+					
+</ul>
+</div>
+
+<div id="banner">
+        <img src="image\test.png" alt="" class="on">
+</div>	
+<div class="classify">
+<div class="notice">课后作业</div>
+</div>
+<div class="content">
+<p>1.压力是如何产生的？</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+2.怎样有效缓解压力？</br>
+答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+3.在心脏骤停抢救生命的黄金时间为？</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+4.导致昏厥的原因：</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+5.通过(  )可以提高沟通技巧。</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+6.解决表层和深层关系的重要环节是？</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+7.大学生创业之前应该考虑清楚自己的？</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+8.学校开展创业教育的目的是什么？</br>答案:<input type="text" name="">
+<input type="submit" name="submit" value="提交"></br>
+</p>
+    </div>
+<div class="footer">
+         tel : 0771-1234567<br />
+        Copyright &copy; 20191214012
+    </div>
+</body>			
+</html>

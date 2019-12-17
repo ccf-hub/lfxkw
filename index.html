@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>交互学习网</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+
+/*banner的大小*/
+dl{
+position:relative;
+width:100%;height:470px;
+border:none;text-align:center; }
+
+/*banner图片的样式*/
+  dd { 
+margin:0 auto;width:100%;
+height:470px;overflow:hidden; }
+#a,#b,#c{padding-top:70px;}
+  img { 
+width:100%;height:400px;} 
+dt1 {
+position:absolute;bottom:5px;right:800px;  }
+dt2 {
+position:absolute;bottom:5px;right:710px;  } 
+dt3 {
+position:absolute;bottom:5px;right:620px;   }
+  a { display:block;margin:1px;
+width:20px;height:20px;
+text-align:center;font:700 12px/20px "宋体",sans-serif;color:#fff;
+text-decoration:none;background:#666;
+border:1px solid #fff;/*filter:alpha(opacity=60);opacity:.6; */ }
+   /*a:hover {background:#000}*/
+   
+/*背景设置*/
+body{
+background-color:#F5F5F5;
+background-repeat: repeat;
+background-size:cover;background-position: center center;
+background-attachment: local;
+}
+
+html,body{
+height:100%;width:100%;
+}
+
+/*导航栏*/
+.nav{
+width: 100%;height:70px;
+background-color:#ADD8E6;filter:alpha(opacity=60);float:left;position:absolute;z-index:1;}
+
+.nav ul{list-style-type: none;margin: 0 auto;
+width: 750px;
+
+}
+
+.nav li{float: left;
+display:inlineblock;
+height:70px;float:left;text-align:center;
+font-weight:bold;width:150px;
+margin-left:0px;position:relative;z-index:1;
+line-height:70px;color:#755B5C
+}
+
+.nav a{display : inline-block;width: 150px;height: 70px;
+padding: 0px;margin:0px;
+font-weight:bold;/*字体加粗*/
+font-family: Microsoft Yahei;/*字体样式*/
+line-height: 70px;background-color: #87CEEB;
+color:#000000;text-align: center;text-decoration: none;
+font-size: 20px;border:0px;/* solid  #C0C0C0*/
+filter:alpha(opacity=60);}
+
+/*下拉菜单*/
+.new-nav li{margin-left:0px;height:70px;clear:both;}
+
+.nav li a{display:inline-block;height:70px;
+text-decoration:none;color:#755B5C;width:150px;
+line-height:70px;}
+
+/*下拉内容格式*/
+.new-nav{
+list-style-type:none;display:none;
+min-width:100px;background-color: #87CEEB;
+}
+/*.new-nav a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}*/
+
+/*.nav li:hover{color:black;}*/
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.nav li a:hover{color:black;}
+/* 在鼠标移上去后显示下拉菜单 */
+.new:hover .new-nav{display:block;}
+
+
+span{
+font-size:10px;display:inline-block;height:20px;width:150px;line-height:10px;
+}
+
+/*分类（结构图的样式和位置）*/
+.classify{
+width:1400px auto;height:399px;margin:0px auto;margin-bottom:20px;background-color:#F5F5DC;text-align:center;
+}
+
+/*分类（交互式的优点）*/
+.classify1{
+width:1200px;height:200px;
+margin:20px auto;overflow:hidden;
+}
+
+.notice{
+height:180px;margin-bottom:20px;text-align:center;color:#FFB21A;line-height:180px;font-size:38px;background-color:#F5F5F5;font-weight:bold;
+}
+
+/*优点介绍的样式*/
+.content{
+width:1000px;height:500px;margin:20px auto;overflow:hidden;
+}
+
+.column1{
+height:500px;width:1350px;
+transition:all 1s;margin-bottom:20px;
+}
+
+.column1 img{
+width:1000px;height:500px;float:left;
+}
+
+.column1 p{
+width:350px;height:500px;line-height:180px;
+text-align:center;background-color:#ADD8E6;float:left;font-size:40px;
+font-weight:bold;
+}
+
+.column1:hover{transform:translateX(-350px);}
+
+.column2{
+height:500px;width:1350px;transition:all 1s;
+margin-left:-350px;margin-bottom:20px;
+}
+
+.column2 img{
+width:1000px;height:500px;float:left;
+}
+
+.column2 p{
+width:350px;height:500px;
+line-height:180px;text-align:center;
+background-color:#ADD8E6;float:left;font-size:40px;
+font-weight:bold;
+}
+
+.column2:hover{transform:translateX(350px);}
+
+.column3{
+height:500px;width:1350px;
+transition:all 1s;margin-bottom:20px;
+}
+
+.column3 img{
+width:1000px;height:500px;float:left;
+}
+
+.column3 p{
+width:350px;height:500px;line-height:180px;
+text-align:center;background-color:#ADD8E6;float:left;font-size:40px;
+font-weight:bold;
+}
+
+.column3:hover{transform:translateX(-350px);}
+
+.column4{
+height:500px;width:1350px;transition:all 1s;
+margin-left:-350px;margin-bottom:20px;
+}
+
+.column4 img{
+width:1000px;height:500px;float:left;
+}
+
+.column4 p{
+width:350px;height:500px;
+line-height:180px;text-align:center;
+background-color:#ADD8E6;float:left;font-size:40px;
+font-weight:bold;
+}
+
+.column4:hover{transform:translateX(350px);}
+
+
+.detail{
+height:500px;width:250px;display:block;font-size:17px;margin:0 auto;text-align:left;
+line-height:33px;
+}
+
+/*创建列*/
+.column{
+margin-top:70px;
+width:100%;
+}
+
+
+/*.column img{
+width:377px;height:500px;
+}
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+
+/* 响应式布局 - 小于 600 px 时改为上下布局 */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.footer{height:50px;line-height:25px;font-size:13px;color:black;background-color:#ADD8E6;
+text-align:center;}
+
+</style>
+</head>
+
+<body>
+<div class="nav">	
+<ul class="daohang">
+			
+<li><a href="index.html">首页</a>
+</li>
+			
+<li class="new">
+<a href="#">课程</a>
+<ul class="new-nav">
+                        <li><a href="usualcourses.html">通用能力</a></li>
+                        <li><a href="necessarycourses.html">公共必修</a></li>
+                        <li><a href="createcourses.html">创新创业</a></li>
+                    </ul>
+</li>
+			
+<li><a href="source.html">资料</a>
+</li>
+
+<li><a href="test.html">作业</a>
+</li>
+
+<li><a href="about.html">关于</a>
+</li>
+					
+</ul>
+</div>
+<dl>
+     <dt1>
+<a href="#a">1</a>
+      </dt1>
+ <dt2>
+<a href="#b">2</a>
+      </dt2>
+ <dt3>
+<a href="#c">3</a>
+      </dt3>
+           <dd>
+<img src="image\bc1.jpg" id="a">
+<img src="image\bc2.jpg" id="b">
+<img src="image\bc3.jpg" id="c">
+           </dd>
+</dl>
+
+
+<div class="classify">
+    <div class="column">
+	<img src="image\xl1.png" style="height:399px;width:1159px;">
+	</div>
+</div>
+
+<div class="classify1">
+<div class="notice">交互式的优点</div>
+</div>
+	
+<div class="content">
+	<div class="column1">
+	<img src="image\xl2.jpg"alt="交互式学习" / >
+<p>
+            	交互式学习
+                <span class="detail">
+                	区别于传统视频教学，交互式课堂创新了一种基于HTML5技术的交互式微课，微课制作简单便捷，并融入教学理念和方法，让学生不再是单向被动地听课，而是主动参与学习过程，启发思考，积极调动学生的学习兴趣。
+                  </span>
+                 </p>
+                </div>
+               </div>
+<div class="content">
+	<div class="column2">
+                  <p>
+            	   在线教学
+                <span class="detail">
+                	在线制作微课，内置专业的素材和模板，并集成在线录音功能，无需下载录制软件；同时将备课、发布、学习和学情的跟踪反馈等整个教学流程一体化，形成完整的在线教学闭环。
+                </span>
+            </p>
+                        <img src="image\xl3.jpg"alt="在线教学" / >
+	</div>
+</div>
+<div class="content">
+	<div class="column3">
+	<img src="image\xl4.jpg"alt="玩转课堂" / >
+<p>
+            	玩转课堂
+                <span class="detail">
+                	平台提供翻转课堂模式应用在课堂教学中，通过任务驱动的方式，指导学生进行课前自学，平台会记录和反馈详尽的学情统计与分析，帮助老师进行二次备课，从而在课堂中有针对性地进行教与学。
+                </span>
+            </p>
+	</div>
+</div>
+<div class="content">	
+	<div class="column4">
+            <p>
+            	全面分析
+                <span class="detail">
+                	可以查看整体或个体的学习情况，及时了解学生的疑难点，通过对学情数据的统计和分析，动态调整教学内容，对学生进行个性化的指导
+                </span>
+            </p>
+                  <img src="image\xl5.jpg"alt="全面分析" / >
+	</div>
+</div>
+<div class="footer">
+         tel : 0771-1234567<br />
+        Copyright &copy; 20191214012
+    </div>
+
+</body>			
+</html>
